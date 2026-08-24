@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sean Patrick HVAC — AC Repair &amp; Replacement, Glendora &amp; San Gabriel Valley</title>
+<style>
+:root{--ink:#0c1218;--body:#37424b;--muted:#67727b;--faint:#96a1aa;--paper:#fff;--ground:#f4f6f8;--panel:#e7ebef;
+--rule:#dbe0e5;--rule-2:#bfc7ce;--navy:#123047;--navy-2:#1d4c6d;--navy-soft:#e6eef4;--amber:#c1720f;--amber-soft:#fdf3e6;
+--good:#1f7a45;--good-bg:#e9f4ee;
+--shadow:0 1px 2px rgba(12,18,24,.05),0 12px 32px -20px rgba(12,18,24,.34);--shadow-lg:0 2px 4px rgba(12,18,24,.06),0 22px 48px -24px rgba(12,18,24,.4);}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.62 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:600;letter-spacing:-.005em}p{margin:0 0 15px}a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 26px}
+.demo-note{background:var(--amber-soft);border-bottom:1px solid #eee0c4;color:#7d4a09;font-size:13px;text-align:center;padding:9px 20px}
+.fixbar{background:#0d2434;color:#c9dce8;font-size:13px;padding:11px 20px;text-align:center;border-bottom:1px solid #17384f}
+.fixbar b{color:#8fe0ac}
+.topbar{background:var(--navy);color:#fff;font-size:13.5px}
+.topbar .wrap{display:flex;flex-wrap:wrap;gap:6px 24px;align-items:center;justify-content:space-between;padding:9px 26px}
+.topbar .l{color:#a3c1d5;font-size:12.5px}.topbar a{color:#fff;text-decoration:none;font-weight:700}.topbar a:hover{color:#ffca7f}
+nav{background:var(--paper);border-bottom:1px solid var(--rule);position:sticky;top:0;z-index:40}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:13px;padding-bottom:13px}
+.brand{text-decoration:none;line-height:1.15}.brand .bn{font-family:Georgia,serif;font-size:19px;font-weight:700;color:var(--navy);display:block}
+.brand .bs{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+.navlinks{display:flex;gap:20px;font-size:14.5px}.navlinks a{text-decoration:none;color:var(--body)}.navlinks a:hover{color:var(--navy)}
+@media(max-width:980px){.navlinks{display:none}}
+.btn{display:inline-block;background:var(--amber);color:#fff;text-decoration:none;font-weight:700;padding:11px 20px;border-radius:4px;font-size:14.5px;border:none;cursor:pointer;transition:transform .12s ease,box-shadow .12s ease;font-family:inherit}
+.btn:hover{transform:translateY(-1px);box-shadow:0 6px 18px -8px rgba(193,114,15,.75)}
+.btn.big{padding:15px 28px;font-size:16px;width:100%}
+.btn.ghost{background:transparent;border:2px solid rgba(255,255,255,.55);color:#fff}.btn.ghost:hover{background:rgba(255,255,255,.1);box-shadow:none}
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0;opacity:.14;background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.5) 0 2px,transparent 2px 28px),repeating-linear-gradient(65deg,rgba(255,255,255,.25) 0 2px,transparent 2px 28px)}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;padding-top:50px;padding-bottom:50px;align-items:center}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:28px;padding-top:36px;padding-bottom:36px}}
+.tag{display:inline-block;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);color:#fff;font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;padding:5px 12px;border-radius:3px;margin-bottom:18px}
+.hero h1{font-size:clamp(29px,4.4vw,44px);line-height:1.09;margin:0 0 17px;color:#fff}
+.hero .dek{font-size:18px;color:#bcd3e2;max-width:52ch;margin-bottom:21px}
+.hero ul{list-style:none;padding:0;margin:0}
+.hero ul li{padding-left:26px;position:relative;margin-bottom:9px;font-size:15.5px;color:#d7e6ef}
+.hero ul li::before{content:"";position:absolute;left:0;top:8px;width:11px;height:11px;border-left:2.5px solid var(--amber);border-bottom:2.5px solid var(--amber);transform:rotate(-45deg)}
+.card{background:var(--paper);border-radius:10px;box-shadow:var(--shadow-lg);padding:26px;color:var(--ink)}
+.card h3{margin:0 0 4px;font-size:21px}.card .cs{font-size:13.5px;color:var(--muted);margin:0 0 17px;line-height:1.5}
+.fg{margin-bottom:12px}.fg label{display:block;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.fg input,.fg select{width:100%;padding:11px 12px;border:1px solid var(--rule-2);border-radius:4px;font-size:15px;font-family:inherit;background:var(--paper);color:var(--ink)}
+.fg input:focus,.fg select:focus{outline:2px solid var(--navy-2);outline-offset:-1px;border-color:var(--navy-2)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:11px}@media(max-width:420px){.frow{grid-template-columns:1fr}}
+.fnote{font-size:12px;color:var(--faint);margin:11px 0 0;text-align:center;line-height:1.5}
+.trust{background:var(--ground);border-bottom:1px solid var(--rule)}
+.trust .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:20px 30px;padding-top:24px;padding-bottom:24px}
+.ti{text-align:center}.ti b{display:block;font-family:Georgia,serif;font-size:21px;color:var(--navy)}
+.ti span{font-size:12.5px;color:var(--muted);line-height:1.45;display:block;margin-top:3px}
+section{padding:56px 0}section.tint{background:var(--ground);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.eyebrow{font-size:11.5px;letter-spacing:.15em;text-transform:uppercase;color:#9a5a09;font-weight:700;margin-bottom:11px}
+h2{font-size:clamp(24px,3.5vw,34px);line-height:1.15;margin:0 0 16px}
+.lede{font-size:17.5px;color:var(--muted);max-width:64ch;margin-bottom:28px}
+.center{text-align:center}.center .lede{margin-left:auto;margin-right:auto}
+.svcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.svc{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:22px;box-shadow:var(--shadow)}
+.svc h3{margin:0 0 8px;font-size:18px}.svc p{font-size:14.5px;color:var(--body);margin:0}
+.svc .ic{width:38px;height:38px;border-radius:5px;background:var(--navy-soft);color:var(--navy);display:flex;align-items:center;justify-content:center;font-weight:700;font-family:Georgia,serif;font-size:17px;margin-bottom:13px}
+.fin{background:linear-gradient(160deg,#123047,#1d4c6d);color:#fff;border-radius:10px;padding:32px;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
+@media(max-width:860px){.fin{grid-template-columns:1fr}}
+.fin h3{color:#fff;font-size:25px;margin:0 0 12px}.fin p{color:#bcd3e2;font-size:15.5px}
+.fin .box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:22px;text-align:center}
+.fin .box .big{font-family:Georgia,serif;font-size:44px;font-weight:700;color:#fff;line-height:1}
+.fin .box .s{font-size:13.5px;color:#a3c1d5;margin-top:6px}
+.ratebox{display:flex;align-items:center;justify-content:center;gap:26px;flex-wrap:wrap;background:var(--navy-soft);border:1px solid #c6d9e6;border-radius:10px;padding:22px 26px;margin-bottom:24px}
+.ratebox .big{font-family:Georgia,serif;font-size:42px;font-weight:700;color:var(--navy);line-height:1}
+.ratebox .lab{font-size:14px;color:var(--body)}.ratebox .lab b{display:block;font-size:15.5px;color:var(--ink)}
+.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:16px}
+.rev{background:var(--paper);border:1px solid var(--rule);border-radius:8px;padding:20px;box-shadow:var(--shadow)}
+.rev .st{color:var(--amber);font-size:15px;letter-spacing:2px;margin-bottom:8px}
+.rev p{font-size:14.5px;color:var(--body);margin:0 0 12px}
+.rev .who{font-size:13px;color:var(--muted)}.rev .who b{color:var(--ink);display:block;font-size:14px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(208px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:8px;overflow:hidden}
+.step{background:var(--paper);padding:22px 20px}
+.step .n{width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;margin-bottom:12px}
+.step h3{font-size:16.5px;margin:0 0 7px}.step p{font-size:14px;color:var(--body);margin:0}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.pills span{background:var(--paper);border:1px solid var(--rule-2);color:var(--body);font-size:13.5px;padding:6px 13px;border-radius:99px}
+.cta{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.cta .bg{position:absolute;inset:0;opacity:.13;background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.5) 0 2px,transparent 2px 28px)}
+.cta .wrap{position:relative;text-align:center;padding-top:54px;padding-bottom:54px}
+.cta h2{color:#fff;margin-bottom:14px}.cta p{color:#bcd3e2;font-size:17px;max-width:60ch;margin:0 auto 24px}
+footer{background:#0a1e2c;color:#8aa6b8;font-size:13.5px;padding:36px 0 28px}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(204px,1fr));gap:26px;margin-bottom:24px}
+footer b{color:#fff;display:block;margin-bottom:8px;font-size:14px}
+footer a{color:#c9dce8;text-decoration:none}footer .fine{border-top:1px solid #133245;padding-top:18px;font-size:12.5px;color:#6a8ba0;line-height:1.7}
+</style>
+</head>
+<body>
+
+<div class="demo-note">Concept demo &middot; built by AG1 Consulting for Sean O'Mahony, 25 August 2026 &middot; your record, your licence and a financing option, on the page</div>
+
+<div class="fixbar">
+  What changed: your <b>rating and review count</b> visible &middot; <b>CSLB 1107117</b> published &middot;
+  <b>financing</b> with a monthly figure &middot; and <b>one</b> tracked number so Angi and Google can finally be compared
+</div>
+
+<div class="topbar"><div class="wrap">
+  <span class="l">Glendora &middot; San Dimas &middot; Azusa &middot; Covina &middot; La Verne &middot; Rancho Cucamonga &middot; Pasadena</span>
+  <span>24/7 &nbsp;<a href="tel:9097197711">(909) 719-7711</a></span>
+</div></div>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top"><span class="bn">Sean Patrick HVAC</span><span class="bs">Residential &amp; Commercial &middot; CSLB 1107117</span></a>
+  <div class="navlinks">
+    <a href="#services">Services</a><a href="#financing">Financing</a><a href="#reviews">Reviews</a><a href="#how">How it works</a><a href="#areas">Areas</a>
+  </div>
+  <a class="btn" href="#quote">Get a free estimate</a>
+</div></nav>
+
+<div class="hero" id="top">
+  <div class="bg"></div>
+  <div class="wrap">
+    <div>
+      <span class="tag">Top 15% of California contractors &middot; BuildZoom 99</span>
+      <h1>Call us and you get an owner, not a call center.</h1>
+      <p class="dek">AC repair, replacement, heat pumps and ductless across the San Gabriel Valley and
+      the Inland Empire. Licensed, insured, 24/7 &mdash; and the person who answers is the person
+      responsible for the job.</p>
+      <ul>
+        <li>Same-day estimates on replacements, most weeks</li>
+        <li>Financing available &mdash; systems from about $150 a month</li>
+        <li>CSLB 1107117 &middot; fully insured &middot; NATE-certified technicians</li>
+      </ul>
+    </div>
+    <div class="card" id="quote">
+      <h3>Free estimate</h3>
+      <p class="cs">Six questions so we arrive knowing what we are looking at &mdash; and so you are
+      not repeating yourself on the phone.</p>
+      <form onsubmit="event.preventDefault();this.innerHTML='&lt;p style=\'text-align:center;padding:26px 0;color:#123047;font-weight:700\'&gt;Thank you. Demonstration form. On the live site this would fire your Google Ads conversion, text you within 60 seconds, and land in one inbox.&lt;/p&gt;';">
+        <div class="fg">
+          <label for="w">What do you need?</label>
+          <select id="w" required>
+            <option value="">Please select&hellip;</option>
+            <option>AC not cooling &mdash; urgent</option><option>No heat</option>
+            <option>System replacement / new install</option><option>Maintenance or tune-up</option>
+            <option>Ductless mini-split</option><option>Heat pump</option>
+            <option>Indoor air quality</option><option>Commercial property</option>
+          </select>
+        </div>
+        <div class="frow">
+          <div class="fg"><label for="age">System age</label>
+            <select id="age"><option value="">Select&hellip;</option><option>Under 8 years</option>
+            <option>8 &ndash; 15 years</option><option>Over 15 years</option><option>Not sure</option></select></div>
+          <div class="fg"><label for="u">How urgent?</label>
+            <select id="u"><option value="">Select&hellip;</option><option>Today &mdash; no cooling</option>
+            <option>This week</option><option>Getting estimates</option></select></div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label for="n">Name</label><input id="n" required></div>
+          <div class="fg"><label for="p">Phone</label><input id="p" type="tel" required></div>
+        </div>
+        <div class="fg"><label for="z">ZIP code</label><input id="z" placeholder="91741" required></div>
+        <p class="fnote" style="text-align:left;margin:0 0 12px">By submitting you agree we may contact
+        you by phone, email or SMS about your enquiry.</p>
+        <button class="btn big" type="submit">Get my free estimate</button>
+        <p class="fnote">Or call <a href="tel:9097197711" style="color:#123047;font-weight:700">(909) 719-7711</a> &mdash; answered 24/7 by an owner.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="trust"><div class="wrap">
+  <div class="ti"><b>CSLB 1107117</b><span>Licensed &amp; insured in California</span></div>
+  <div class="ti"><b>Top 15%</b><span>BuildZoom score 99 of CA contractors</span></div>
+  <div class="ti"><b>24/7</b><span>Emergency service</span></div>
+  <div class="ti"><b>Since 2010</b><span>In the HVAC trade</span></div>
+</div></div>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="eyebrow">Reviews</div>
+    <h2>The number belongs on the page, not on Yelp.</h2>
+    <div class="ratebox">
+      <div class="big">4.7</div>
+      <div class="lab"><b>28 reviews on Yelp &middot; 5.0 on Angi</b>
+      Also reviewed on HomeAdvisor, Nextdoor and BBB &middot; BuildZoom score 99</div>
+    </div>
+    <div class="revs">
+      <div class="rev"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Sean was able to provide an estimate the same day, was friendly, and the team completed the
+        AC unit replacement within a couple of days."</p>
+        <div class="who"><b>Customer review</b>AC replacement</div></div>
+      <div class="rev"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"We received estimates from multiple companies and Sean Patrick was able to match a Carrier
+        A/C to our Bryant system."</p>
+        <div class="who"><b>Customer review</b>System match</div></div>
+      <div class="rev"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Your most recent Google review goes here, pulled live with the customer's first name and
+        their city.</p>
+        <div class="who"><b>Live from Google</b>Review slot</div></div>
+    </div>
+    <p class="fnote" style="margin-top:16px;font-size:13px;text-align:left">Your current site shows
+    three testimonials with no rating, no count and no platform. <b>The 4.7 and the 28 already exist</b>
+    — they are just on somebody else's website. On the live version this would be a live badge linking
+    to Yelp so anyone can check it.</p>
+  </div>
+</section>
+
+<section class="tint" id="financing">
+  <div class="wrap">
+    <div class="eyebrow">Financing</div>
+    <h2>Most people are not choosing between contractors. They are deciding whether they can do it at all.</h2>
+    <div class="fin">
+      <div>
+        <h3>Turn $10,000 into a monthly number</h3>
+        <p>A full system replacement in Southern California typically runs $8,000 to $15,000. That is a
+        big decision to make in one go &mdash; and it is the point where most replacement jobs stall,
+        not because of the contractor, but because of the timing.</p>
+        <p>Financing turns that into a monthly figure people can actually decide on. Approved
+        applications, straightforward terms, and no obligation to use it.</p>
+      </div>
+      <div class="box">
+        <div class="big">$—</div>
+        <div class="s">per month<br>your lender's figure goes here</div>
+      </div>
+    </div>
+    <p class="fnote" style="margin-top:16px;font-size:13px;text-align:left"><b>This section is
+    deliberately blank on the number.</b> You do not currently offer financing, so nothing has been
+    invented — the monthly figure and the lender are yours to choose. Almost every competitor
+    advertising in your market has one.</p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow">What we do</div>
+    <h2>Residential and commercial, across Southern California.</h2>
+    <div class="svcs">
+      <div class="svc"><div class="ic">1</div><h3>AC repair</h3><p>Diagnosed properly rather than guessed at. 24/7, because systems fail in August, not in March.</p></div>
+      <div class="svc"><div class="ic">2</div><h3>System replacement</h3><p>Properly sized for the house, not the biggest unit we can sell. Same-day estimates most weeks.</p></div>
+      <div class="svc"><div class="ic">3</div><h3>Maintenance</h3><p>The tune-up that keeps the manufacturer warranty valid and stops the August failure happening at all.</p></div>
+      <div class="svc"><div class="ic">4</div><h3>Ductless mini-split</h3><p>For additions, converted garages and rooms the ductwork never reached.</p></div>
+      <div class="svc"><div class="ic">5</div><h3>Heat pumps</h3><p>Increasingly the right answer in Southern California, and where the remaining incentives sit.</p></div>
+      <div class="svc"><div class="ic">6</div><h3>Indoor air quality</h3><p>Filtration and ventilation — the part most contractors never bring up.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tint" id="how">
+  <div class="wrap">
+    <div class="eyebrow">How it works</div>
+    <h2>An owner answers. An owner quotes it.</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>You call, we answer</h3><p>24/7, and you get Sean or Joe — not a receptionist reading from a script.</p></div>
+      <div class="step"><div class="n">2</div><h3>We look at it properly</h3><p>Diagnosed and measured, with the sizing calculation done rather than eyeballed.</p></div>
+      <div class="step"><div class="n">3</div><h3>An honest recommendation</h3><p>Repair if a repair will do. We will tell you when it genuinely will not.</p></div>
+      <div class="step"><div class="n">4</div><h3>Written price, financing if you want it</h3><p>The full number and the monthly number, so you can decide on either.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="wrap">
+    <div class="eyebrow">Areas we serve</div>
+    <h2>San Gabriel Valley, Inland Empire and the Foothills.</h2>
+    <div class="pills">
+      <span>Glendora</span><span>San Dimas</span><span>Azusa</span><span>Covina</span>
+      <span>La Verne</span><span>Claremont</span><span>Pasadena</span><span>Rancho Cucamonga</span>
+      <span>Upland</span><span>Riverside</span><span>Ontario</span><span>Pomona</span>
+    </div>
+    <p class="fnote" style="margin-top:20px;font-size:13px;text-align:left">On the live site each of
+    these would be a short page of its own — "AC repair Glendora", "AC replacement San Dimas" — which
+    is exactly what people type, and exactly what your Google Ads should be landing on instead of the
+    homepage.</p>
+  </div>
+</section>
+
+<div class="cta">
+  <div class="bg"></div>
+  <div class="wrap">
+    <h2>Free estimate, 24/7, answered by an owner.</h2>
+    <p>Licensed, insured, and rated 4.7 by the people who already used us.</p>
+    <a class="btn" href="#quote">Get my free estimate</a>
+    &nbsp;&nbsp;
+    <a class="btn ghost" href="tel:9097197711">Call (909) 719-7711</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><b>Sean Patrick HVAC, Inc.</b>
+        Residential and commercial HVAC across the San Gabriel Valley and Inland Empire.<br><br>
+        CSLB 1107117 &middot; Licensed &amp; insured</div>
+      <div><b>Contact</b>
+        <a href="tel:9097197711">(909) 719-7711</a><br>24/7 emergency service<br>Glendora, CA 91741</div>
+      <div><b>Services</b>
+        AC repair<br>System replacement<br>Maintenance<br>Ductless mini-split<br>Heat pumps<br>Indoor air quality</div>
+      <div><b>Credentials</b>
+        CSLB 1107117, active<br>BuildZoom score 99<br>NATE-certified technicians<br>Yelp 4.7 &middot; Angi 5.0</div>
+    </div>
+    <div class="fine">
+      Concept demonstration built by AG1 Consulting, 25 August 2026. Not a live website and not
+      affiliated with any current supplier. Telephone number, service list, service areas and the
+      owner-answers-the-phone claim are taken from seanpatrickhvac.com. CSLB licence number, BuildZoom
+      score and review figures are as published on those public records on that date and have not been
+      independently verified. Customer quotes are paraphrased from your public reviews.
+      <b>The financing section is deliberately left without a figure — you do not currently offer
+      financing and nothing has been invented on your behalf.</b> The "$150 a month" reference in the
+      hero is an illustrative placeholder and must be replaced with a real lender quote or removed
+      before anything goes live. Same-day estimate and 24/7 claims should only be published if you can
+      meet them consistently. &copy; 2026.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
